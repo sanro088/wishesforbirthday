@@ -1,3 +1,4 @@
 # wishes
-not for all
+not for all pupil
+https://sanro088.github.io/wishesforbirthday/
 
