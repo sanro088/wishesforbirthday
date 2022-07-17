@@ -1,0 +1,196 @@
+
+   <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  text-align:center;
+  
+  
+  
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  
+  
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+  
+    
+  
+  
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+
+  background-image: url("photo12.jpg");
+
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.box
+{
+ 
+    color:white;
+    top:0;
+    position:fixed;
+    background-position: center;
+    margin-top:20%;
+}
+.first
+{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJF_2O1_66m0f8KTD0JFIi6-GgkvYm5e5bHg&usqp=CAU');
+    background-repeat:no-repeat;
+    width:100%;
+    background-size: cover;
+    position: middle;
+    
+    
+
+}
+</style>
+</head>
+<body>
+    <div class="first">
+    <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">Happy Birthday</span>
+        </span>
+      </h1> </div>
+<div class="bg-image">
+<h1 class="ml6">
+    <span class="text-wrapper">
+      <span class="letters">Happy Birthday</span>
+    </span>
+  </h1>
+<br>
+<br>
+<h1 class="ml6">
+    <span class="text-wrapper">
+      <span class="letters">Happy Birthday</span>
+    </span>
+  </h1>
+  <br>
+  <br>
+  <h1 class="ml6">
+    <span class="text-wrapper">
+      <span class="letters">Happy Birthday</span>
+    </span>
+  </h1>
+  <br>
+  <br>
+  <h1 class="ml6">
+    <span class="text-wrapper">
+      <span class="letters">Happy Birthday</span>
+    </span>
+  </h1>
+</div>
+<div class="bg-text">
+  <h2>DEAR Amma...</h2>
+  <a href="home4.html">
+    <h1 style="font-size:50px">LIKE YOUR SELF AMMA</h1></a>
+  <p>Heads up! Catch that smile! It's from me to you Amma. Happy birthday.
+    <br> <br>
+    click your self..
+  </p>
+</div>
+
+  <div class="box">
+      
+      <img src="photo13.jpg" style="width:80%; height:100%; margin-left: 60px;;">
+
+
+
+  
+  </div>
+
+  <p style="color:black; "> click above puple color</p>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml6 .letters');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml6 .letter',
+          translateY: ["1.1em", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i
+        }).add({
+          targets: '.ml6',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+      
+    
+    
+    
+    </script>
+</body>
+</html>

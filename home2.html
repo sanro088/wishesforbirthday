@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meata name="viewport" content="width=device-width, initial-sclae=1">
+    
+    <style>
+       
+body
+{
+    color:white;
+    background-color:blueviolet;
+    border:1px solid blueviolet;
+}
+
+.container
+{
+    position:relative;
+    max-width:900px;
+    margin:0 auto;
+}
+.container img 
+{
+    vertical-align:middle;
+}
+.container .content
+{
+    position:absolute;
+    background:rgb(0,0,0);
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    width:100%;
+    padding-top:10px;
+
+}
+.imgcontainer
+{
+    position:relative;
+    max-width:900px;
+    margin:0 auto;   
+}
+.imgcontainer img
+{
+    vertical-align: middle;
+}
+
+.imgcontainer .imgcontent
+{
+    position:absolute;
+    top :0;
+    background:rgb(255,182,193);
+    background:rgba(255,182,193,0.5);
+    color:black;
+    width:100%;
+    padding-top:20px;
+    word-spacing: 5px;
+    background-position: center;
+}
+
+
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  text-align:center;
+  
+  
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  
+  
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+    
+  
+  
+}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">Beautiful Queen</span>
+        </span>
+      </h1>
+<img src="photo1.jpg" style="width:100%; height:55%;">
+<div class ="content">
+<h1>HAPPY BIRTHDAY..AMMA..</h1>
+
+<p>
+  I am the luckiest person on Earth because I have the most wonderful mother by my side.....
+  Happy birthday AMMA...
+    &nbsp; 
+</p>
+
+</div>
+
+
+
+</div>
+<div class="imgcontainer">
+<img src="https://rukminim1.flixcart.com/image/416/416/k7qinbk0/balloon/7/p/x/100-100-piece-latex-balloon-wall-backdrop-pink-white-red-balloon-original-imafpwq5fjyh8y4h.jpeg?q=70" style="width:100%;height:100%;">
+<div class="imgcontent">
+    <p>
+      Mom. Everyday I am grateful to have you in my life. Let today be another reminder that you’re the best. Love you Amma.<br>
+      <br>
+
+
+       
+      <span style="color:blue;">You’re more than a mother. You’re the greatest woman I know.  <br>
+       
+        Mom, thanks for all your support and your invaluable life lessons. Cheers to your best birthday yet. <br>
+       
+    </span>
+    
+      
+    Mom, you know how to bring our family together like none other.<br> 
+      
+    We love you with all of our hearts.<br>
+
+     
+      <span style="color:blue;">it’s always a treat to wish a happy birthday to you mom...<br>
+ 
+        </span>
+    
+        Throughout my whole life, you have showered me with your love. Thank you for always giving me your all.  <br>
+        I do my best always to return the favor. Happy birthday, mom.
+    
+      
+
+    </p>
+
+
+
+
+
+
+</div>
+
+</div>
+<a href="home3.html">
+<h2 style="text-align:center; color:black;"> CLICK ME </h2>
+</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript">
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml6 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 750,
+      delay: (el, i) => 50 * i
+    }).add({
+      targets: '.ml6',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+  
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
